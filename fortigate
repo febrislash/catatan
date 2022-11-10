@@ -5,6 +5,10 @@
 #diagnose debug app ike -1
 #diagnose debug ena
 
-#syarat dial up
+2. syarat dial up
 ~1 ip public
 ~gunakan id untuk mempercepat
+
+3. penggunaan xauth
+~ harus ada id yang di panggil
+~ xauth = l2tp ipsec
