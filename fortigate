@@ -12,3 +12,19 @@
 3. penggunaan xauth
 ~ harus ada id yang di panggil
 ~ xauth = l2tp ipsec
+
+4. create vxlan interface
+
+config system interface
+   edit vlan805
+     set vdom DRC-FW-SVR
+     set vlanid 805
+     set interface port9
+   next
+   
+ config system switch-interface
+  edit sw805
+    set vdom DRC-FW-SVR
+    set member vlan805
+  next
+end
