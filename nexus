@@ -1,0 +1,14 @@
+nexus dapat di breakout cable pada sfp28
+
+100gb >> jadi 4x25
+40gbps >> jadi 4x10
+
+1. cek kompabilitas
+2. cek module berapa dan port berapa
+3. masuk pada configure terminal
+
+configure terminal
+interface breakout module 2 port 10 map 10g-4x
+
+module 2 port 10 di pecah jadi 10gbps x 4 biji
+
